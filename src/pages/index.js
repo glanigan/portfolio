@@ -1,6 +1,12 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import CoreLayout from '../layouts/CoreLayout';
+import Appbar from '../components/Appbar';
+import styled from 'styled-components';
 
+const Section = styled.div`
+  height: 100vh;
+  height: calc(100vh-32px);
+`;
 const skills = ['React', 'Redux', 'Gatsby', 'Lerna'];
 
 export default function Home() {
@@ -25,19 +31,37 @@ export default function Home() {
 
   return (
     <CoreLayout>
-      <header>
-        <h1>GL</h1>
-      </header>
-      <h2>
-        Hi. I'm Gary; A Javascript developer,
-        <br />
-        with skills in [ {skills[count]} ];
-      </h2>
-
-      {/* <button>Get In Touch</button>
-
-      <Card />
-      <Card /> */}
+      <Section>
+        <header>
+          <h1>GL</h1>
+        </header>
+        <h2>
+          Hi. I'm Gary; A Javascript developer,
+          <br />
+          with skills in [ {skills[count]} ];
+        </h2>
+      </Section>
+      <Appbar />
+      <div
+        id="my-work"
+        style={{
+          height: '100vh',
+          background: '#fff',
+        }}
+      ></div>
+      <div
+        id="about-me"
+        style={{
+          height: '100vh',
+        }}
+      ></div>
+      <div
+        id="get-in-touch"
+        style={{
+          height: '100vh',
+          background: '#fff',
+        }}
+      ></div>
     </CoreLayout>
   );
 }

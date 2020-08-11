@@ -63,7 +63,7 @@ export default function CoreLayout({ children }) {
   return (
     <React.Fragment>
       <GlobalStyle />
-      <Container>{children}</Container>
+      {children}
     </React.Fragment>
   );
 }
