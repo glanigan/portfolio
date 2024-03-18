@@ -6,7 +6,7 @@ export default function Home() {
     <main className="px-4 mx-auto flex flex-col items-center justify-center">
       <section className="relative max-w-4xl min-h-screen flex flex-col gap-6 py-24">
         <h2 className="text-8xl fadein font-light">Hello...</h2>
-        <p className="text-3xl fadein font-medium">I'm Gary, a Typescript developer who loves building amazing experiences on web.</p>
+        <p className="text-3xl fadein font-medium">I&apos;m Gary, a Typescript developer who loves building amazing experiences on web.</p>
         <Button className='mt-12 max-w-md fadein text-2xl py-4'>Get in touch</Button>
       </section>
 
