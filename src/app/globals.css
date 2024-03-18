@@ -3,31 +3,51 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --bg-base: 0 0 0;
+  --fg-base: 255,255,255;
+  /* --fg-base: 241, 90, 89; */
+
+  --primary-fg: 241, 90, 89;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --bg-base: 255, 255, 255;
+    --fg-base: 0,0,0;
   }
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: rgb(var(--fg-base));
+  background: rgb(var(--bg-base));
+}
+h1,h2,h3,a {
+  color: rgb(var(--primary-fg));
+}
+button{
+  color: rgb(var(--fg-base));
+  font-weight: 500;
+}
+button:hover{
+  background: rgb(var(--primary-fg));
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@keyframes fadein {
+  0%{
+    visibility: hidden;
+    opacity: 0;
   }
+  10%{
+    transform: translateX(1rem);
+    visibility: hidden;
+    opacity: 0;
+  }
+  100%{
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.fadein{
+  animation: forwards fadein 2s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
