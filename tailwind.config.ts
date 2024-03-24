@@ -8,15 +8,15 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      colors:{
-        primary:{
-          'fg': 'blue',
-          'bg': 'blue',
+      colors: {
+        primary: {
+          fg: "blue",
+          bg: "blue",
         },
-        base:{
-          bg:'blue',
-          fg: 'blue'
-        }
+        base: {
+          bg: "blue",
+          fg: "blue",
+        },
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

@@ -4,7 +4,7 @@
 
 :root {
   --bg-base: 0 0 0;
-  --fg-base: 255,255,255;
+  --fg-base: 255, 255, 255;
   /* --fg-base: 241, 90, 89; */
 
   --primary-fg: 241, 90, 89;
@@ -13,7 +13,7 @@
 @media (prefers-color-scheme: light) {
   :root {
     --bg-base: 255, 255, 255;
-    --fg-base: 0,0,0;
+    --fg-base: 0, 0, 0;
   }
 }
 
@@ -21,33 +21,36 @@ body {
   color: rgb(var(--fg-base));
   background: rgb(var(--bg-base));
 }
-h1,h2,h3,a {
+h1,
+h2,
+h3,
+a {
   color: rgb(var(--primary-fg));
 }
-button{
+button {
   color: rgb(var(--fg-base));
   font-weight: 500;
 }
-button:hover{
+button:hover {
   background: rgb(var(--primary-fg));
 }
 
 @keyframes fadein {
-  0%{
+  0% {
     visibility: hidden;
     opacity: 0;
   }
-  10%{
+  10% {
     transform: translateX(1rem);
     visibility: hidden;
     opacity: 0;
   }
-  100%{
+  100% {
     visibility: visible;
     opacity: 1;
     transform: translateX(0);
   }
 }
-.fadein{
+.fadein {
   animation: forwards fadein 2s cubic-bezier(0.075, 0.82, 0.165, 1);
 }

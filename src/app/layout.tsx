@@ -18,14 +18,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <header className='py-4 px-4'>
-          <div className="max-w-4xl flex justify-between mx-auto">
+        <header className="px-4 py-4">
+          <div className="mx-auto flex max-w-4xl justify-between">
             <h1>
-              <Link href='/'>Gary Lanigan</Link>
+              <Link href="/">Gary Lanigan</Link>
             </h1>
             <nav className="flex gap-3">
-              <Link href='#blog'>Blog</Link>
-              <Link href='#contact'>Contact</Link>
+              <Link href="#blog">Blog</Link>
+              <Link href="#contact">Contact</Link>
             </nav>
           </div>
         </header>
