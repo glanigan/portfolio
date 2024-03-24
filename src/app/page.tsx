@@ -4,8 +4,8 @@ export default function Home() {
   return (
     <main className="mx-auto flex flex-col items-center justify-center px-4">
       <section className="relative flex min-h-screen max-w-4xl flex-col gap-6 py-24">
-        <h2 className="fadein text-6xl font-light">Hello...</h2>
-        <p className="fadein text-3xl font-medium">
+        <h2 className="text-6xl font-light">Hello...</h2>
+        <p className="text-3xl font-medium">
           I&apos;m Gary, a Typescript developer who loves building amazing
           experiences on web.
         </p>
